@@ -1,0 +1,126 @@
+@function alpha($color, $alpha) {
+    @return rgba($color, $alpha);
+}
+@function rem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
+
+//////////////
+$up-xs: '320px';
+$up-sm: '576px';
+$up-md: '768px';
+$up-lg: '992px';
+$up-xl: '1200px';
+@mixin responsive-up($up) {
+    @if $up=="xs" {
+        @media screen and (min-width: #{$up-xs}) {
+            @content;
+        }
+    }
+    @if $up=="sm" {
+        @media screen and (min-width: #{$up-sm}) {
+            @content;
+        }
+    }
+    @if $up=="md" {
+        @media screen and (min-width: #{$up-md}) {
+            @content;
+        }
+    }
+    @if $up=="lg" {
+        @media screen and (min-width: #{$up-lg}) {
+            @content;
+        }
+    }
+    @if $up=="xl" {
+        @media screen and (min-width: #{$up-xl}) {
+            @content;
+        }
+    }
+}
+
+@mixin responsive-down($down) {
+    @if $down=="xs" {
+        @media screen and (max-width: #{$up-xs}) {
+            @content;
+        }
+    }
+    @if $down=="sm" {
+        @media screen and (max-width: #{$up-sm}) {
+            @content;
+        }
+    }
+    @if $down=="md" {
+        @media screen and (max-width: #{$up-md}) {
+            @content;
+        }
+    }
+    @if $down=="lg" {
+        @media screen and (max-width: #{$up-lg}) {
+            @content;
+        }
+    }
+    @if $down=="xl" {
+        @media screen and (max-width: #{$up-xl}) {
+            @content;
+        }
+    }
+}
+
+@mixin responsive-only($only) {
+    @if $only=="xs" {
+        @media screen and (max-width: #{$up-xs}) {
+            @content;
+        }
+    }
+    @if $only=="sm" {
+        @media screen and (min-width: #{$up-xs}) and (max-width: #{$up-sm}) {
+            @content;
+        }
+    }
+    @if $only=="md" {
+        @media screen and (min-width: #{$up-sm}) and (max-width: #{$up-md}) {
+            @content;
+        }
+    }
+    @if $only=="lg" {
+        @media screen and (min-width: #{$up-md}) and (max-width: #{$up-lg}) {
+            @content;
+        }
+    }
+    @if $only=="xl" {
+        @media screen and (min-width: #{$up-lg}) and (max-width: #{$up-xl}) {
+            @content;
+        }
+    }
+}
+
+@mixin responsive-custom($from, $to) {
+    @media screen and (min-width: #{$from}) and (max-width: #{$to}) {
+        @content;
+    }
+}
+
+@mixin responsive-custom-up($from) {
+    @media screen and (min-width: #{$from}) {
+        @content;
+    }
+}
+
+@mixin responsive-custom-down($down) {
+    @media screen and (max-width: #{$down}) {
+        @content;
+    }
+}
+
+@mixin text($string) {
+    .text {
+        &:after {
+            color: rgb(255, 225, 0);
+            content: ' (#{$string})';
+        }
+    }
+}
+
+

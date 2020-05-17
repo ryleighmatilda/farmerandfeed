@@ -1,0 +1,21 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@framer/framer.device-hand-iphone-1": "^1.0.0",
+		"@framer/framer.device-skin-apple-iphone-xs-spacegrey": "^1.0.0",
+		"@types/react": "^16.4.16"
+	},
+	"peerDependencies": {
+		"framer": "^0.10.0 || ^1",
+		"react": "^16.3.0",
+		"react-dom": "^16.3.0"
+	},
+	"framer": {
+		"id": "3518334e-746f-489d-b1e3-fe511d2a1b17",
+		"displayName": "Cells"
+	},
+	"author": "Benjamin den Boer",
+	"name": "@framer/benjamin.cells",
+	"version": "1.3.0"
+}

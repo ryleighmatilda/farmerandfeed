@@ -1,0 +1,31 @@
+{
+	"main": "build/index.js",
+	"license": "MIT",
+	"email": "christian@irack.mx",
+	"homepage": "http://irack.mx",
+	"devDependencies": {
+		"@types/react": "^16.0.31",
+		"framer": "^0.8.0"
+	},
+	"keywords": [
+		"tabs",
+		"web",
+		"prototype",
+		"tabs component",
+		"web components",
+		"tab"
+	],
+	"peerDependencies": {
+		"framer": "^0.8.0",
+		"react": "^16.3.0",
+		"react-dom": "^16.3.0"
+	},
+	"framer": {
+		"id": "12bbd982-e712-4cbf-b981-07f1508e267f",
+		"displayName": "Tabs Component"
+	},
+	"author": "Christian Irack",
+	"dependencies": {},
+	"name": "@framer/christianirack.tabs-component",
+	"version": "1.9.0"
+}
