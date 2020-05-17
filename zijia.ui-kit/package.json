@@ -1,0 +1,20 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.0.31"
+	},
+	"peerDependencies": {
+		"framer": "^0.10 || ^1",
+		"react": "^16.3.0",
+		"react-dom": "^16.3.0"
+	},
+	"framer": {
+		"id": "0add0ddf-a53b-4ddb-a853-fdf91e837b20",
+		"displayName": "UI Kit"
+	},
+	"author": "Zijia Wang",
+	"dependencies": {},
+	"name": "@framer/zijia.ui-kit",
+	"version": "1.83.0"
+}
