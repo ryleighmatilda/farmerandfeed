@@ -1,0 +1,29 @@
+{
+	"license": "MIT",
+	"main": "dist/index.js",
+	"devDependencies": {
+		"@types/react": "^16.8",
+		"prettier": "^1.19.1",
+		"stylelint": "^13.2.0",
+		"stylelint-config-recommended": "^3.0.0",
+		"stylelint-config-styled-components": "^0.1.1",
+		"stylelint-processor-styled-components": "^1.10.0"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8",
+		"styled-components": "^4.4.0"
+	},
+	"framer": {
+		"displayName": "Framer Base Kit"
+	},
+	"name": "@framer/framer.base",
+	"version": "1.1.0",
+	"author": "Framer Team",
+	"dependencies": {
+		"framer-base": "1.1.0-alpha.5",
+		"polished": "^3.4.1",
+		"react-feather": "^2.0.3",
+		"styled-components": "^4.4.0"
+	}
+}
